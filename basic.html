@@ -34,16 +34,18 @@
             Four
         </div>
         
- 
-
-        
     </body>
 
     <script>
-        
         d3.selectAll("p").style("color", function() {
               return "hsl(" + Math.random() * 360 + ",100%,50%)";
          });
- 
+
+
+         d3.selectAll("div").style("background-color", function(d, i) {
+             console.log("d", d);
+             console.log("i", i);
+             return i % 2 ? "#fff" : "#eee";
+         });
     </script>
 </html>
