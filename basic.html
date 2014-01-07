@@ -1,0 +1,28 @@
+<html>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <body>
+        <p> 
+            One 
+        </p>
+        <p>
+            Two
+        </p>
+         <p>
+            Three
+        </p>
+        <p>
+            Four
+        </p>
+         <p>
+            Five
+        </p>
+    </body>
+
+    <script>
+        
+        d3.selectAll("p").style("color", function() {
+              return "hsl(" + Math.random() * 360 + ",100%,50%)";
+         });
+ 
+    </script>
+</html>
